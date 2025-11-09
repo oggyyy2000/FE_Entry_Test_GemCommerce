@@ -1,5 +1,6 @@
 {
   "name": "react-template",
+  "homepage": "https://oggyyy2000.github.io/FE_Entry_Test_GemCommerce/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,10 +9,13 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "test": "vitest"
+    "test": "vitest",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.6",
+    "gh-pages": "^6.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "tailwindcss": "^4.0.6"
